@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./logo.png" />
+    <title>To Do</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To Do Vanilla</h1>
+      <div class="todo-container">
+        <input
+          id="todo"
+          type="text"
+          placeholder="Enter your task"
+          autocomplete="off"
+        />
+        <button id="btn" class="btn">+</button>
+      </div>
+
+      <div class="list">
+        <ul id="todoUl" class="todoUl"></ul>
+      </div>
+
+      <div id="popup" class="hide">
+        <h2>Todo can't empty</h2>
+        <span>Please enter your task first</span>
+      </div>
+    </div>
+
+    <!-- <script src="./script.js"></script> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
