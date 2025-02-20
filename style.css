@@ -1,0 +1,149 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: radial-gradient(
+    circle,
+    rgba(48, 43, 99, 1) 15%,
+    rgba(36, 36, 62, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #555;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+input[type="text"] {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+input[type="text"]:focus {
+  border-color: #6c63ff;
+}
+
+button {
+  width: 50px;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #6c63ff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #574fdb;
+}
+
+.list {
+  margin-top: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 0.75rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #f1f1f1;
+}
+
+.listTodo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.check {
+  cursor: pointer;
+}
+
+span {
+  flex-grow: 1;
+  margin-left: 0.5rem;
+}
+
+.delBtn {
+  height: 30px;
+  width: 30px;
+  background-color: #ff6b6b;
+  border: none;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.delBtn:hover {
+  background-color: #ff4c4c;
+}
+
+#popup {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding-bottom: 2.5rem;
+}
+
+.hide {
+  display: none;
+}
